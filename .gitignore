@@ -1,0 +1,15 @@
+.env
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+*.duckdb.wal
+data_warehouse/*.duckdb
+data_lake/bronze/*
+data_lake/silver/*
+data_lake/gold/*
+!data_lake/bronze/.gitkeep
+!data_lake/silver/.gitkeep
+!data_lake/gold/.gitkeep
+.vscode/
+.idea/

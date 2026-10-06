@@ -1,0 +1,9 @@
+id: 03_spark_batch
+namespace: cyberpulse
+description: PySpark distributed threat intelligence profiling and entity blocklisting
+
+tasks:
+  - id: run_spark_threat_intel
+    type: io.kestra.plugin.scripts.python.Commands
+    commands:
+      - python batch/spark_threat_aggregation_job.py

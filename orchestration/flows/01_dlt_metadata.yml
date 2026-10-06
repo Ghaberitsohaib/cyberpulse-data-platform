@@ -1,0 +1,9 @@
+id: 01_dlt_metadata
+namespace: cyberpulse
+description: Sync MITRE ATT&CK definitions and cloud asset catalogs via dltHub
+
+tasks:
+  - id: run_dlt_threat_intel
+    type: io.kestra.plugin.scripts.python.Commands
+    commands:
+      - python ingestion/dlt_threat_intel_pipeline.py

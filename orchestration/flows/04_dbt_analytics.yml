@@ -1,0 +1,9 @@
+id: 04_dbt_analytics
+namespace: cyberpulse
+description: Run dbt security incident dimensional modeling and data quality assertions
+
+tasks:
+  - id: execute_dbt_siem_marts
+    type: io.kestra.plugin.scripts.python.Commands
+    commands:
+      - python analytics_dbt/run_dbt.py

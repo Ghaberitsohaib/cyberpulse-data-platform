@@ -1,0 +1,9 @@
+id: 02_kafka_streaming
+namespace: cyberpulse
+description: Ingest VPC flow and security logs, run CEP threat detection and sink to Bronze Lakehouse
+
+tasks:
+  - id: consume_and_score_stream
+    type: io.kestra.plugin.scripts.python.Commands
+    commands:
+      - python streaming/consumer_to_lakehouse.py
